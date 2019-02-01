@@ -8,11 +8,9 @@ LABEL "com.github.actions.color"="yellow"
 LABEL "repository"="http://github.com/srt32/hugo-actions"
 LABEL "homepage"="http://github.com/srt32/hugo-actions"
 
-ADD entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
-
 RUN	apk add --no-cache hugo
 
-COPY entrypoint.sh /
+ADD entrypoint.sh /
+RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
