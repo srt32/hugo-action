@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 LABEL "com.github.actions.name"="Hugo Actions"
-LABEL "com.github.actions.description"="Commands to help with building Hugo based sites"
+LABEL "com.github.actions.description"="Commands to help with building Hugo based static sites"
 LABEL "com.github.actions.icon"="mic"
 LABEL "com.github.actions.color"="yellow"
 
