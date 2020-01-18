@@ -4,7 +4,7 @@ set -e
 echo "#################################################"
 echo "Starting the Hugo Action"
 
-sh -c "hugo $*"
+hugo "$@"
 
 echo "#################################################"
 echo "Completed the Hugo Action"
